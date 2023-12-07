@@ -1,0 +1,465 @@
+CARLOS ALBERTO FUENTES PEREZ 
+
+ssh bandit0@bandit.labs.overthewire-org -p 2220
+
+------------------------------------------------------------
+
+LVL 0
+
+pwd
+ls
+cat readme
+
+------------------------------------------------------------
+
+LVL 1
+
+ls 
+pwd
+cat /home/bandit1/-
+
+------------------------------------------------------------
+
+LVL 2
+
+ls
+pwd
+cat "spaces in this filename"
+
+
+------------------------------------------------------------
+
+LVL 3
+
+find inhere 
+cat /home/bandit3/inhere/.hidden 
+
+
+------------------------------------------------------------
+
+LVL 4
+
+pwd 
+ls
+cd inhere 
+ls 
+file ./*
+cat ./-file07
+
+
+-------------------------------------------------------------
+
+LVL 5
+
+ls 
+cd inhere
+ls
+file ./*
+ls -l
+ls -R
+find ./*
+find . -size 1033c -type f
+cat /home/bandit5/inhere/maybehere07/.file2
+
+-------------------------------------------------------------
+
+LVL 6
+
+ls
+find / -type f -user bandit7 -group bandit6 -size 33c 
+find / -type f -user bandit7 -group bandit6 -size 33c 2> /dev/null
+cat /var/lib/dpkg/info/bandit7.password
+
+-------------------------------------------------------------
+
+LVL 7
+
+ls 
+head --help
+head -n 10 data.txt
+grep millionth data.txt
+
+---------------------------------------------------------------
+
+LVL 8
+
+ls 
+sort data.txt | uniq -u
+
+
+----------------------------------------------------------------
+
+LVL 9 
+
+ls 
+file data.txt 
+strings data.txt 
+
+-----------------------------------------------------------------
+
+LVL 10
+
+ls
+cat data.txt | base64 -d
+
+-----------------------------------------------------------------
+
+LVL 11
+
+ls 
+cat data.txt 
+cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+
+--------------------------------------------------------------------------------
+
+LVL 12
+
+ls 
+cat data.txt 
+mkdir /tmp/bandit12
+cp data.txt /tmp/bandit12
+cd /tmp/bandit12
+ls
+xxd -r data.txt > data 
+ls
+file data 
+mv data file.gz
+gzip -d file.gz
+ls
+file file 
+mv file file.bz2
+
+man bzip2
+
+bzip2 -d file.bz2
+ls
+file file 
+mv file file.gz
+gzip -d file.gz
+ls
+file file 
+mv file file.tar 
+tar xf file.tar 
+ls
+file data5.bin 
+rm file.tar 
+rm data
+rm data.txt 
+ls
+file file 
+file data5.bin 
+mv data5.bin  data.tar 
+tar xf data.tar 
+ls
+file data6.bin 
+mv data6.bin data.bz2
+bzip2 -d data.bz2
+ls
+file file 
+file data
+mv data data.tar 
+ls 
+tar xf data.tar 
+ls 
+file data8.bin 
+mv data8.bin data.gz 
+gzip -d data.gz 
+ls 
+file data
+cat data 
+
+--------------------------------------------------------------------
+
+LVL 13 
+
+ls 
+whoami
+ssh -i sshkey.private bandit14localhost -p 2220
+cat /etc/bandit_pass/bandit14
+
+--------------------------------------------------------------
+
+LVL 14
+
+nc localhost 30000
+fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
+
+---------------------------------------------------------------
+
+LVL 15
+
+openssl s_client -connect localhost:30001
+jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+
+-------------------------------------------------
+
+
+LVL 16 
+
+nmap -p 31000-32000 127.0.0.1
+nmap -p 31046, 31518, 31691, 31790, 31960 -A localhost
+cat /etc/bandit_pass/bandit16
+openssl s_client -connect localhost:31790
+mkdir /tmp/bandit77
+cd /tmp/bandit77
+nano sshkey 
+chmod 600 sshkey
+ssh -oHostKeyAlgorithms=+ssh-dss -i sshkey bandit17@localhost -p 2220
+ls /etc/bandit_pass/
+cat /etc/bandit_pass/bandit17
+
+--------------------------------------------------------
+
+LVL 17
+
+ls 
+diff passwords.new passwords.old
+sort passwords.old passwords.new | uniq -u
+cat passwords.new | grep 
+cat passwords.new | grep 
+
+
+------------------------------------------------------
+
+LVL 18
+
+ssh -t bandit18@bandit.labs.overthewire.org -p 2220 /bin/sh
+ls
+cat readme 
+
+-------------------------------------------------------
+
+LVL 19
+
+ls
+file bandit20-do
+ls -l bandit20-do 
+./bandit20-do id
+./bandit20-do whoami 
+./bandit20-do cat /etc/bandit_pass/bandit20
+
+-------------------------------------------------------
+
+LVL 20
+
+ls -la
+nc -lnvp 3030 <<< VxCazJaVykI6W36BkBU0mJTCM8rR95XT &
+jobs 
+./suconnect 3030
+
+
+---------------------------------------------------
+
+LVL 21
+
+man cron
+ls -la /etc/cron.d/
+cat /etc/cron.d/cronjob_bandit22
+cat /usr/bin/cronjob_bandit22.sh
+cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+
+
+-------------------------------------------------------
+
+LVL 22
+
+ls /etc/cron.d -la
+cat /etc/cron.d/cronjob_bandit23
+cat /usr/bin/cronjob_bandit23.sh
+whoami 
+myname=$(whoami)
+echo $myname  
+echo I am user $myname | md5sum | cut -d ' ' -f 1
+myname=bandit23
+echo I am user $myname | md5sum | cut -d ' ' -f 1
+cat /tmp/8ca319486bfbbc3663ea0fbe81326349
+
+---------------------------------------------------------
+
+LVL 23 
+
+ls -la /etc/cron.d
+cat /etc/cron.d/cronjob_bandit24
+cat /usr/bin/cronjob_bandit24.sh
+cd /var/spool/bandit24
+ls -la
+mkdir /tmp/passtmp
+cd /tmp/passtmp
+echo "cat /etc/bandit_pass/bandit24 >> /tmp/passtmp/password" > mio.sh
+chmod 777 mio.sh
+cat mio.sh
+ls -la mio.sh
+touch password 
+chmod 644 password 
+ls -la password
+chmod 666 password
+ls -la password
+cd ..
+cd passtmp
+ls -la
+cp mio.sh /var/spool/bandit24
+ls -la
+cat password
+
+
+ESPERAR UN MINUTO DESPUES DE CHMOD 777 <------ IMPORTANTE 
+
+-------------------------------------------------------------
+
+LVL 24
+
+cat /etc/bandit_pass/bandit24
+mkdir /tmp/lvl24
+cd /tmp/lvl24
+vim bruteforcescript.sh
+cat bruteforcescript.sh
+
+#!/bin/bash
+for i in {6000..9999}
+do 
+	echo "VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar $i"
+done
+
+chmod 700 bruteforcescript.sh 
+./bruteforcescript.sh > combinations.txt
+
+-------------------------------------------------------------
+
+LVL 25
+
+ls 
+file bandit26.sshkey 
+ssh -i ./bandit26.sshkey bandit26@localhost -p 2220
+clear 
+cat /etc/passwd
+file /usr/bin/showtext 
+cat /usr/bin/showtext 
+
+clear 
+ssh -i ./bandit26.sshkey bandit26@localhost -p 2220
+clear
+ssh -i ./bandit26.sshkey bandit26@localhost -p 2220
+!cat /etc/bandit_pass/bandit26
+v
+:e /etc/bandit_pass/bandit26
+
+---------------------------------------------------------------
+
+LVL 26
+
+v
+:set shell?
+:set shell=/bin/bash
+:set shell?
+:shell
+ls
+./bandit27-do cat /etc/bandit_pass/bandit27
+
+-----------------------------------------------------------------
+
+LVL 27
+
+ls
+cat /etc/bandit_pass/bandit27
+mkdir /tmp/go
+cd /tmp/go
+git clone ssh://bandit27-git@localhost/home/bandit27-git/repo 2220
+cd repo/
+ls
+cat README 
+
+------------------------------------------------------------------
+
+LVL 28
+
+ls
+id
+mkdir /tmp/lvl28
+cd /tmp/lvl28
+git clone ssh://bandit28-git@localhost:2220/home/bandit28-git/repo
+ls
+cd repo/
+ls
+cat README.md 
+git log
+git checkout abcff758fa6343a0d002a1c0add1ad8c71b88534
+cat README.md 
+
+--------------------------------------------------------------------
+
+LVL 29
+
+ls
+id
+mkdir /tmp/lvl29
+cd /tmp/lvl29
+git clone ssh://bandit29-git@localhost:2220/home/bandit29-git/repo
+ls
+cd repo/
+ls
+cat README.md 
+git log
+git checkout 1a57cf10158f133c4f40ff82251f605a7618631d
+cat README.md 
+git branch -a
+ls
+cat README.md 
+
+-------------------------------------------------------------------
+
+LVL 30
+
+ls
+mkdir /tmp/bandit30
+cd /tmp/bandit30
+git clone ssh://bandit30-git@localhost:2220/home/bandit30-git/repo
+ls
+cd repo/
+ls
+cat README.md 
+git log
+git branch -a
+git tag
+git show secret 
+
+----------------------------------------------------------------------
+
+LVL 31
+
+id
+mkdir /tmp/bandit31
+cd /tmp/bandit31
+git clone ssh://bandit31-git@localhost:2220/home/bandit31-git/repo
+ls 
+cd repo/
+ls
+cat README.md 
+git log
+nano key.txt
+ls -a
+cat .git
+cat .gitignore 
+git add -f key.txt 
+git commit -m "Upload key.txt"
+git push -u origin master
+
+-----------------------------------------------------------------------
+
+LVL 32
+
+WELCOME TO THE UPPERCASE SHELL
+>> $0
+$ pwd
+$ id
+$ cat /etc/bandit_pass/bandit33
+$ exit
+>> exit
+
+ssh -oHostKeyAlgorithms=+ssh-dss bandit33@bandit.labs.overthewire.org -p 2220
+ls
+id
+cat README.txt
+
+--------------------------------------------------------------------------
+
+
